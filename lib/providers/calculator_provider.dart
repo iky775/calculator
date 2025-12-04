@@ -1,18 +1,18 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
-import 'package:math_expressions/math_expressions.dart'; // Kita butuh bantuan library ini untuk hitungan kompleks, TAPI untuk tugas sederhana kita pakai logika manual dulu agar paham konsepnya.
+import 'package:math_expressions/math_expressions.dart'; 
 
 class CalculatorProvider with ChangeNotifier {
-  // State: Data yang akan berubah-ubah [cite: 6]
+
   String _displayText = '0';
   String _result = '';
 
-  // Getter untuk mengambil data dari UI
+
   String get displayText => _displayText;
   String get result => _result;
 
-  // Fungsi untuk menangani input tombol
+
   void onButtonPress(String buttonText) {
     if (buttonText == 'AC') {
       _reset();
