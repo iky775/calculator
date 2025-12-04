@@ -24,7 +24,6 @@ class CalculatorProvider with ChangeNotifier {
       _addInput(buttonText);
     }
 
-    // Memberi tahu UI bahwa data berubah agar di-rebuild [cite: 90, 101]
     notifyListeners();
   }
 
